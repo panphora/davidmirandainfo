@@ -1,0 +1,35 @@
+/* http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;font:16px/1 sans-serif;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}blockquote,figure,h1,h2,h3,h4,ol,p,ul{margin:0;padding:0}li,main{display:block}h1,h2,h3,h4{font-size:inherit}strong{font-weight:700}a,button{color:inherit;}a:hover,button:hover{transition:.1s}a{text-decoration:none}button{overflow:visible;border:0;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:0 0;cursor:pointer}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
+
+
+.site-header {
+	text-align: center;
+}
+
+.contact-form {
+	text-align: center;
+}
+
+.site-width-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.col {
+	width: 50%;
+	float: left;
+}
+
+.section {
+	margin-bottom: 3rem;
+}
+
+.section-header {
+	font-weight: bold; // temporary
+}
+
+.footer {
+	clear: both;
+}
