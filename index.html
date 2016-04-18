@@ -21,20 +21,20 @@
   <form class="contact-form">
     <div class="contact-me-text">Want to contact me?</div>
     <div class="form-group email">
-      <label class="form-label"><img class="lightning-bolt" src="svgs/lightning.svg" />your email</label>
-      <input class="form-input" type="text">
+      <label class="form-label" data-type="email"><img class="lightning-bolt" src="svgs/lightning.svg" />your email</label>
+      <input class="form-input" type="text" data-type="email" />
     </div>
     <div class="form-group message">
-      <label class="form-label"><img class="lightning-bolt" src="svgs/lightning.svg" />your message</label>
-      <textarea class="form-textarea"></textarea>
+      <label class="form-label" data-type="message"><img class="lightning-bolt" src="svgs/lightning.svg" />your message</label>
+      <textarea class="form-textarea" data-type="message"></textarea>
     </div>
     <div class="button-container">
-      <button type="submit">send</button>
+      <button class="send-button" type="submit">send</button>
     </div>
   </form>
-  <div class="stuff">
+  <div class="stuff clearfix">
     <div class="site-width-container">
-      <div class="col">
+      <div class="col one">
         <div class="section">
           <div class="section-header">Projects I'm working on</div>
           <div class="regular-list">
@@ -56,23 +56,23 @@
           <div class="section-header">Things I want to learn</div>
           <div class="bulleted-list">
             <div class="item">
-              <div class="list-heading">How to build a product from start to finish</div>
+              <div class="list-heading"><span class="bullet">&bull;</span> How to build a product from start to finish</div>
               <div class="content">This is difficult and hard to know how to do right. It requires not only knowing about people and what they want, but having the fortitude to stick to your intuition about what they really need.</div>
             </div>
             <div class="item">
-              <div class="list-heading">How to build a product that people love using</div>
+              <div class="list-heading"><span class="bullet">&bull;</span> How to build a product that people love using</div>
               <div class="content">I want to learn about how to build something simple enough to be useful and magical enough to be fun to use. I believe this requires a lot of humility.</div>
             </div>
             <div class="item">
-              <div class="list-heading">How to stay focused on one thing at a time</div>
+              <div class="list-heading"><span class="bullet">&bull;</span> How to stay focused on one thing at a time</div>
               <div class="content">I do my best work when I'm not distracted, but when things aren't going smoothly it can be far too easy to shift focus. I want to hone my focus and work on worthwhile projects.</div>
             </div>
             <div class="item">
-              <div class="list-heading">How to accomplish long term goals</div>
+              <div class="list-heading"><span class="bullet">&bull;</span> How to accomplish long term goals</div>
               <div class="content">I'd like to find a way to pin down my heart's desires and accomplish them step by step, no matter how hard it is or how long it takes.</div>
             </div>
             <div class="item">
-              <div class="list-heading">How to love more fully</div>
+              <div class="list-heading"><span class="bullet">&bull;</span> How to love more fully</div>
               <div class="content">I would like to find the strength and freedom of mind to care about people even if they don't like me or help me or know me, and open myself up enough to even love them.</div>
             </div>
           </div>
@@ -118,22 +118,22 @@
         <div class="section">
           <div class="section-header">Domains for sale</div>
           <div class="link-list">
-            <div class="item">
+            <div class="item link">
               <a href="">JetPlot.com</a>
             </div>
-            <div class="item">
+            <div class="item link">
               <a href="">RiotPost.com</a>
             </div>
-            <div class="item">
+            <div class="item link">
               <a href="">ControlWar.com</a>
             </div>
-            <div class="item">
+            <div class="item link">
               <a href="">ITakePhotographs.com</a>
             </div>
-            <div class="item">
+            <div class="item link">
               <a href="">PortoBot.com</a>
             </div>
-            <div class="item">
+            <div class="item link">
               <a href="">WordGrid.com</a>
             </div>
           </div>
@@ -146,17 +146,17 @@
               <div class="content">I haven't worked on this in a while. It's currently maintained by my friend Stefano. It's a really fun game when it gets lots of people online.</div>
             </div>
             <div class="item">
-              <div class="link"><a href="">Journeyship</a> (offline)</div>
+              <div class="link"><a href="">Journeyship</a><span class="offline-tag"> (offline)</span></div>
               <div class="content">This was an animation webapp that I built over the course of 6 months. I loved building it and it took a lot of hard work.</div>
             </div>
             <div class="item">
-              <div class="link"><a href="">Reactions for Facebook</a> (offline)</div>
+              <div class="link"><a href="">Reactions for Facebook</a><span class="offline-tag">  (offline)</span></div>
               <div class="content">A Google Chrome extension that would let you add all of the reactions from this comic to any post on Facebook. A pretty challenging project.</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col two">
         <div class="section">
           <div class="section-header">Blogs I'm proud of</div>
           <div class="regular-list">
@@ -224,7 +224,7 @@
           <div class="section-header">Companies I've worked for</div>
           <div class="regular-list">
             <div class="item">
-              <div class="link">Songism (offline)</div>
+              <div class="link"><span class="offline-text">Songism</span><span class="offline-tag">  (offline)</span></div>
               <div class="content">The first startup I ever worked for. I was a co-founder. The idea was to create a Pandora-like internet radio for indie artists only, with incentives for purchasing songs.</div>
             </div>
             <div class="item">

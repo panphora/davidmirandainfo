@@ -22,6 +22,19 @@ body {
   margin-bottom: 50px;
 }
 
+.col {
+  width: 50%;
+  float: left;
+}
+
+.col.one {
+  padding-right: 3rem;
+}
+
+.col.two {
+  padding-left: 3rem;
+}
+
 .profile-photo {
   width: 117px;
   vertical-align: bottom;
@@ -36,18 +49,19 @@ body {
   padding-bottom: .3em;
 }
 
-// CONTACT FORM
+/* contact form */
 
 .contact-form {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .contact-me-text {
-  text-align: center;
   font-size: 24px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-form.email-is-focused .form-group.email .form-label {
+form.email-is-focused .form-group.email .form-label, form.message-is-focused .form-group.message .form-label {
   display: none;
 }
 
@@ -55,10 +69,17 @@ form.email-is-focused .form-group.email .form-label {
   position: relative;
 }
 
-.form-group.email {
+.form-group {
   width: 400px;
+  margin: 0 auto 1.1rem;
+}
+
+.form-group.email {
   height: 40px;
-  margin: 0 auto 1rem;
+}
+
+.form-group.message {
+  height: 160px;
 }
 
 .form-label {
@@ -95,10 +116,24 @@ form.email-is-focused .form-group.email .form-label {
   margin-right: .4rem;
 }
 
-.form-group.message {
-  width: 400px;
-  height: 160px;
-  margin: 0 auto;
+.send-button {
+  font-family: "liquorstore-jazz",sans-serif;
+  font-size: 24px;
+  padding: 7px 22px 8px 56px;
+  background-size: 21px 15px;
+  background-image: url("/svgs/envelope.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 12px;
+  color: #ffffff;
+  outline: 1px solid #222222;
+  border-top: 1px solid #5FD486;
+  background-color: #32ab5a;
+}
+
+.send-button:hover {
+  outline: 1px solid #555;
+  border-top: 1px solid #61BA7F;
+  background-color: #47B56B;
 }
 
 .site-width-container {
@@ -106,18 +141,71 @@ form.email-is-focused .form-group.email .form-label {
   margin: 0 auto;
 }
 
-.col {
-  width: 50%;
-  float: left;
+/* stuff */
+
+.stuff {
+  background-color: #F0D7AD;
+  padding: 4rem 0;
+}
+
+.stuff .item .link {
+  margin-bottom: .75em;
+}
+
+.stuff .link a {
+  color: #e11280;
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.stuff .link a:hover {
+  color: #222222;
 }
 
 .section {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .section-header {
-  font-weight: bold; // temporary
+  font-family: "liquorstore-jazz",sans-serif;
+  font-size: 24px;
+  margin-bottom: 1rem;
 }
+
+.regular-list .item, .bulleted-list .item {
+  margin-bottom: 1.3rem;
+}
+
+.regular-list .content, .bulleted-list .content {
+  padding-left: 1rem;
+}
+
+.list-heading {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+.bullet {
+  font-size: 26px;
+}
+
+.offline-text, .offline-tag {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.offline-text {
+  font-weight: 400;
+}
+
+.link-list .link {
+  margin-bottom: 1em;
+}
+
+
+/* footer */
 
 .footer {
   clear: both;
