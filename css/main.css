@@ -2,34 +2,70 @@
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;font:16px/1 sans-serif;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}blockquote,figure,h1,h2,h3,h4,ol,p,ul{margin:0;padding:0}li,main{display:block}h1,h2,h3,h4{font-size:inherit}strong{font-weight:700}a,button{color:inherit;}a:hover,button:hover{transition:.1s}a{text-decoration:none}button{overflow:visible;border:0;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:0 0;cursor:pointer}
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
+/* utils */
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
 
+/* main */
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  background-color: #F5EAD3;
+}
 
 .site-header {
-	text-align: center;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.profile-photo {
+  width: 117px;
+  vertical-align: bottom;
+}
+
+.profile-name {
+  background-color: #469e6d;
+  color: #fff;
+  font-weight: 800;
+  font-size: 58px;
+  padding-top: .3em;
+  padding-bottom: .3em;
 }
 
 .contact-form {
-	text-align: center;
+  text-align: center;
+}
+
+.contact-me-text {
+  font-size: 24px;
+}
+
+label {
+  font-family: "liquorstore-jazz",sans-serif;
 }
 
 .site-width-container {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .col {
-	width: 50%;
-	float: left;
+  width: 50%;
+  float: left;
 }
 
 .section {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .section-header {
-	font-weight: bold; // temporary
+  font-weight: bold; // temporary
 }
 
 .footer {
-	clear: both;
+  clear: both;
 }
