@@ -209,4 +209,31 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 
 .footer {
   clear: both;
+  background-color: #333;
+  font-weight: 300;
+  text-align: center;
+  padding: 3rem 0 4rem;
+  color: #F0D7AD;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.thank-you {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.open-source-notice {
+  font-size: 18px;
+  margin-bottom: 2.2rem;
+}
+
+.unicorn {
+  width: 70px;
 }
