@@ -197,6 +197,10 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   padding-left: 1rem;
 }
 
+.content a {
+  text-decoration: underline;
+}
+
 .list-heading {
   font-size: 22px;
   font-weight: 300;
