@@ -27,7 +27,10 @@ $(".form-group input, .form-group textarea").on("blur", function (event) {
   var $elem = $(event.currentTarget);
   var type = $elem.data("type");
 
-  $elem
-    .closest("form")
-    .removeClass(type + "-is-focused");
+  if ($elem.val() === "") {
+    $elem
+      .closest("form")
+      .removeClass(type + "-is-focused");
+  }
+
 });
