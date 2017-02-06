@@ -60,7 +60,7 @@ body {
 
 .contact-me-text {
   font-size: 24px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 form.email-is-focused .form-group.email .form-label, form.message-is-focused .form-group.message .form-label {
