@@ -12,9 +12,10 @@ html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
 /* main */
 
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #F5EAD3;
   line-height: 1.3em;
+  color: #222;
 }
 
 .site-header {
@@ -44,7 +45,7 @@ body {
 .profile-name {
   background-color: #469e6d;
   color: #fff;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 58px;
   padding-top: .3em;
   padding-bottom: .3em;
@@ -88,8 +89,10 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   position: absolute;
   width: 100%;
   top: 5px;
-  font-family: "liquorstore-jazz",sans-serif;
-  font-size: 24px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
   text-align: center;
   cursor: text;
 }
@@ -119,13 +122,15 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .send-button {
-  font-family: "liquorstore-jazz",sans-serif;
-  font-size: 24px;
-  padding: 8px 22px 9px 56px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 19px;
+  padding: 8px 16px 9px 51px;
   background-size: 21px 15px;
   background-image: url("/svgs/envelope.svg");
   background-repeat: no-repeat;
-  background-position: 22px 10px;
+  background-position: 18px 11px;
   color: #ffffff;
   outline: 1px solid #222222;
   border-top: 1px solid #5FD486;
@@ -146,7 +151,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 /* stuff */
 
 .stuff {
-  background-color: #F0D7AD;
+  background-color: #fae5be;
   padding: 4rem 0;
 }
 
@@ -171,30 +176,34 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .section-header {
-  font-family: "liquorstore-jazz",sans-serif;
-  font-size: 24px;
-  margin-bottom: 1rem;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 2rem;
+  color: #373733;
 }
 
 .extra-note {
   font-size: 22px;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.6em;
   padding-top: 1rem;
 }
 
 .stars {
   float: left;
-  width: 52px;
-  margin-right: 1rem;
+  width: 64px;
+  margin-right: 1.2rem;
+  margin-top: .5rem;
 }
 
 .regular-list .item, .bulleted-list .item {
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
 }
 
-.regular-list .content, .bulleted-list .content {
-  padding-left: 1rem;
+.content {
+  line-height: 1.5em;
 }
 
 .content a {
@@ -203,8 +212,9 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 
 .list-heading {
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: .5em;
+  color: #71695a;
 }
 
 .bullet {
