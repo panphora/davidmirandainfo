@@ -13,15 +13,19 @@ html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #F5EAD3;
   line-height: 1.3em;
   color: #222;
+  background-color: #333;
+}
+
+.top-section-container {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  background-color: #F5EAD3;
 }
 
 .site-header {
   text-align: center;
-  margin-top: 90px;
-  margin-bottom: 50px;
 }
 
 .col {
@@ -38,7 +42,7 @@ body {
 }
 
 .profile-photo {
-  width: 117px;
+  width: 121px;
   vertical-align: bottom;
 }
 
@@ -61,7 +65,10 @@ body {
 
 .contact-me-text {
   font-size: 24px;
-  margin-bottom: 2rem;
+  font-weight: 300;
+  margin-top: 3.5rem;
+  margin-bottom: 1.8rem;
+  opacity: .8;
 }
 
 form.email-is-focused .form-group.email .form-label, form.message-is-focused .form-group.message .form-label {
@@ -186,8 +193,8 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 
 .extra-note {
   font-size: 22px;
-  font-weight: 300;
-  line-height: 1.6em;
+  font-weight: 400;
+  line-height: 1.8em;
   padding-top: 1rem;
 }
 
@@ -203,7 +210,9 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .content {
+  font-size: 18px;
   line-height: 1.5em;
+  opacity: .85;
 }
 
 .content a {
@@ -214,7 +223,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   font-size: 22px;
   font-weight: 600;
   margin-bottom: .5em;
-  color: #71695a;
+  color: #d69340;
 }
 
 .bullet {

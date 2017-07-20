@@ -15,30 +15,32 @@
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 </head>
 <body>
-  <div class="site-header">
-    <div class="profile-photo-container">
-      <img class="profile-photo" src="images/me.png" alt="David Miranda profile photo">
+  <div class="top-section-container clearfix">
+    <div class="site-header">
+      <div class="profile-photo-container">
+        <img class="profile-photo" src="images/me.png" alt="David Miranda profile photo">
+      </div>
+      <div class="profile-name">
+        David Miranda
+      </div>
     </div>
-    <div class="profile-name">
-      David Miranda
-    </div>
+    <form class="contact-form" action="https://formspree.io/xyygzapx" method="POST">
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_subject" value="Thank you for contacting me!" />
+      <div class="contact-me-text">Contact me:</div>
+      <div class="form-group email">
+        <label class="form-label" data-type="email"><img class="lightning-bolt" src="svgs/lightning.svg" />your email</label>
+        <input name="email" class="form-input" type="email" data-type="email" />
+      </div>
+      <div class="form-group message">
+        <label class="form-label" data-type="message"><img class="lightning-bolt" src="svgs/lightning.svg" />your message</label>
+        <textarea name="message" class="form-textarea" data-type="message"></textarea>
+      </div>
+      <div class="button-container">
+        <button class="send-button" type="submit">send</button>
+      </div>
+    </form>
   </div>
-  <form class="contact-form" action="https://formspree.io/xyygzapx" method="POST">
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="hidden" name="_subject" value="Thank you for contacting me!" />
-    <div class="contact-me-text">Contact me:</div>
-    <div class="form-group email">
-      <label class="form-label" data-type="email"><img class="lightning-bolt" src="svgs/lightning.svg" />your email</label>
-      <input name="email" class="form-input" type="email" data-type="email" />
-    </div>
-    <div class="form-group message">
-      <label class="form-label" data-type="message"><img class="lightning-bolt" src="svgs/lightning.svg" />your message</label>
-      <textarea name="message" class="form-textarea" data-type="message"></textarea>
-    </div>
-    <div class="button-container">
-      <button class="send-button" type="submit">send</button>
-    </div>
-  </form>
   <div class="stuff clearfix">
     <div class="site-width-container">
       <div class="col one">
@@ -53,6 +55,15 @@
               <div class="link"><a href="https://todopal.com/">TodoPal</a></div>
               <div class="content">A personal and flexible project planning tool.</div>
             </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header">Projects I loved working on</div>
+          <div class="regular-list">
+            <div class="item">
+              <div class="link"><a href="http://spiralbutton.artisfy.com/">Spiral Button</a></div>
+              <div class="content">A button that's genuinely fun to click on.</div>
+            </div>
             <div class="item">
               <div class="link"><a href="https://swarmation.com/">Swarmation</a></div>
               <div class="content">A massively-multiplayer pixel-formation game.</div>
@@ -60,7 +71,7 @@
           </div>
         </div>
         <div class="section">
-          <div class="section-header">Things I'm Learning</div>
+          <div class="section-header">I'm learning more about</div>
           <div class="bulleted-list">
             <div class="item">
               <div class="list-heading">Building web applications</div>
@@ -81,11 +92,11 @@
           </div>
         </div>
         <div class="section">
-          <div class="section-header">Technology I'm Learning</div>
+          <div class="section-header">Technology I'm interested in</div>
           <div class="regular-list">
             <div class="item">
               <div class="link"><a href="https://facebook.github.io/react/">React</a></div>
-              <div class="content">Excellent tooling, a great developer ecosystem, and a responsive community.</div>
+              <div class="content">Excellent tooling, a great developer ecosystem, and a responsive community. What more could you ask for?</div>
             </div>
             <div class="item">
               <div class="link"><a href="https://greensock.com/gsap">SVG Animation</a></div>
@@ -139,7 +150,7 @@
       </div>
       <div class="col two">
         <div class="section">
-          <div class="section-header">Blogs I write for</div>
+          <div class="section-header">Blogs written by me</div>
           <div class="regular-list">
             <div class="item">
               <div class="link"><a href="http://blog.artisfy.com/">Artisfy's blog</a></div>
@@ -164,7 +175,7 @@
           </div>
         </div>
         <div class="section">
-          <div class="section-header">Ideas I want to work on</div>
+          <div class="section-header">Ideas I'd love to work on!</div>
           <div class="regular-list">
             <div class="item">
               <div class="link"><a href="http://wowmash.com/">Wowmash</a></div>
@@ -195,7 +206,7 @@
               <div class="content">A place to find catharsis in reading about anonymous strangers' tragedies, adventures, and moments of serendipity.</div>
             </div>
           </div>
-          <div class="extra-note"><img class="stars" src="/svgs/stars.svg"/>If you're a web developer and one of my ideas piques your interest, message me and let's work on it together!</div>
+          <div class="extra-note"><img class="stars" src="/svgs/stars.svg"/>If you're a web developer and one of my ideas piques your interest, message me so we can work on it together!</div>
         </div>
         <div class="section">
           <div class="section-header">Past projects</div>
@@ -211,7 +222,7 @@
           </div>
         </div>
         <div class="section">
-          <div class="section-header">Companies I've worked for</div>
+          <div class="section-header">Startups I've worked for</div>
           <div class="regular-list">
             <div class="item">
               <div class="link"><a href="http://windshield.storylog.com/">Windshield</a><span class="offline-tag">  (offline)</span></div>
