@@ -223,7 +223,8 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   font-size: 22px;
   font-weight: 600;
   margin-bottom: .5em;
-  color: #d69340;
+  color: #000;
+  opacity: .6;
 }
 
 .bullet {
