@@ -34,19 +34,21 @@ $(".form-group input, .form-group textarea").on("blur", function (event) {
 
 $(".contact-form").on("submit", function (event) {
   event.preventDefault();
-  var $form = $(event.currentTarget);
 
-  var data = {};
-  $form.find("[name]").each(function (index, elem) {
-    var $elem = $(elem);
-    data[$elem.attr("name")] = $elem.val();
-  });
+  var $form = $(event.currentTarget);
+  var $submitButton = $form.find(".send-button");
 
   $.ajax({
-      url: "https://formspree.io/xyygzapx", 
+      url: $form.prop("action"), 
       method: "POST",
-      data: data,
-      dataType: "json",
+      crossDomain: true,
+      headers : {
+        'accept' : 'application/javascript',
+      },
+      data: $form.serialize(),
+      beforeSend: function () {
+        $submitButton.prop('disabled', 'disabled');
+      },
       success: function (resp) {
         $form.find(".contact-me-text").html("Thank you for contacting me!<br><br>٩(^ᴗ^)۶")
         $form.find(".form-group, .button-container").hide()
