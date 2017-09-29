@@ -38,22 +38,31 @@ $(".contact-form").on("submit", function (event) {
   var $form = $(event.currentTarget);
   var $submitButton = $form.find(".send-button");
 
-  $.ajax({
-      url: $form.prop("action"), 
-      method: "POST",
-      crossDomain: true,
-      headers : {
-        'accept' : 'application/javascript',
-      },
-      data: $form.serialize(),
-      beforeSend: function () {
-        $submitButton.prop('disabled', 'disabled');
-      },
-      success: function (resp) {
-        $form.find(".contact-me-text").html("Thank you for contacting me!<br><br>٩(^ᴗ^)۶")
-        $form.find(".form-group, .button-container").hide()
-      }
-  });
+  var message = $form.find(".form-textarea").val();
+  var messageWithoutWhitespace = message.replace(/\s/g, "");
+
+  if (messageWithoutWhitespace.length < 15) {
+    var notyf = new Notyf();
+    notyf.alert("Please write me a longer message before sending!");
+  } else {
+    $.ajax({
+        url: $form.prop("action"), 
+        method: "POST",
+        crossDomain: true,
+        headers : {
+          'accept' : 'application/javascript',
+        },
+        data: $form.serialize(),
+        beforeSend: function () {
+          $submitButton.prop('disabled', 'disabled');
+        },
+        success: function (resp) {
+          $form.find(".contact-me-text").html("Thank you for contacting me!<br><br>٩(^ᴗ^)۶")
+          $form.find(".form-group, .button-container").hide()
+        }
+    });
+  }
+
 });
 
 
