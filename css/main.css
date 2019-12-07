@@ -158,8 +158,9 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 /* stuff */
 
 .stuff {
-  background-color: #fae5be;
+  background-color: #d6e3ff;
   padding: 4rem 0;
+  color: #2f4269;
 }
 
 .stuff .item .link {
@@ -167,7 +168,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .stuff .link a {
-  color: #e11280;
+  color: #3f588c;
   text-decoration: underline;
   font-size: 24px;
   font-weight: 300;
@@ -175,7 +176,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .stuff .link a:hover {
-  color: #222222;
+  color: #f22c95;
 }
 
 .section {
@@ -223,8 +224,8 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   font-size: 22px;
   font-weight: 600;
   margin-bottom: .5em;
-  color: #000;
-  opacity: .6;
+  color: #2f4269;
+  opacity: .85;
 }
 
 .bullet {
