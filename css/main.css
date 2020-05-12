@@ -12,7 +12,7 @@ html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
 /* main */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.3em;
   color: #222;
   background-color: #333;
@@ -47,7 +47,7 @@ body {
 }
 
 .profile-name {
-  background-color: #469e6d;
+  background-color: #20908b;
   color: #fff;
   font-weight: 600;
   font-size: 58px;
@@ -158,9 +158,10 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 /* stuff */
 
 .stuff {
-  background-color: #d6e3ff;
+  background-color: #15908b;
   padding: 4rem 0;
-  color: #2f4269;
+  color: #fff;
+  font-weight: 700;
 }
 
 .stuff .item .link {
@@ -168,7 +169,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .stuff .link a {
-  color: #3f588c;
+  color: #fff;
   text-decoration: underline;
   font-size: 24px;
   font-weight: 300;
@@ -176,7 +177,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .stuff .link a:hover {
-  color: #f22c95;
+  text-decoration: none;
 }
 
 .section {
@@ -184,12 +185,11 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .section-header {
-  font-family: 'Maven Pro', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 21px;
-  margin-bottom: 2rem;
-  color: #373733;
+  margin-bottom: 3rem;
+  color: #88ccca;
 }
 
 .extra-note {
@@ -207,13 +207,12 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .regular-list .item, .bulleted-list .item {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .content {
   font-size: 18px;
   line-height: 1.5em;
-  opacity: .85;
 }
 
 .content a {
@@ -223,9 +222,8 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 .list-heading {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: .5em;
-  color: #2f4269;
-  opacity: .85;
+  margin-bottom: .75em;
+  color: #fff;
 }
 
 .bullet {
