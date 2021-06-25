@@ -173,7 +173,6 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .stuff .item .link {
-  margin-bottom: .75em;
   font-weight: bold;
 }
 
@@ -243,7 +242,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   font-weight: 400;
 }
 
-.link-list .link, .list-heading {
+.link-list .link, .list-heading, .stuff .item .link {
   margin-bottom: .5rem;
 }
 
