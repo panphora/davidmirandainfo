@@ -13,9 +13,9 @@ html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
 /* VARIABLES */
 :root {
   --top-and-bot-text-color: #e5dbff;
-  --top-and-bot-bg-color: #6741d9;
+  --top-and-bot-bg-color: #1f2933;
   --main-text-color: #fff;
-  --main-bg-color: #0ca678;
+  --main-bg-color: #00a674;
 }
 
 /* main */
