@@ -9,19 +9,28 @@ html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
     clear:both;
 }
 
+
+/* VARIABLES */
+:root {
+  --top-and-bot-text-color: #e5dbff;
+  --top-and-bot-bg-color: #6741d9;
+  --main-text-color: #fff;
+  --main-bg-color: #0ca678;
+}
+
 /* main */
 
 body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.3em;
-  color: #222;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  line-height: 1.5;
+  color: var(--top-and-bot-text-color);
   background-color: #333;
 }
 
 .top-section-container {
   padding-top: 90px;
   padding-bottom: 50px;
-  background-color: #F5EAD3;
+  background-color: var(--top-and-bot-bg-color);
 }
 
 .site-header {
@@ -47,9 +56,9 @@ body {
 }
 
 .profile-name {
-  background-color: #20908b;
-  color: #fff;
-  font-weight: 600;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-weight: bold;
   font-size: 58px;
   padding-top: .3em;
   padding-bottom: .3em;
@@ -64,11 +73,12 @@ body {
 }
 
 .contact-me-text {
-  font-size: 24px;
-  font-weight: 300;
   margin-top: 3.5rem;
   margin-bottom: 1.8rem;
-  opacity: .8;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  opacity: .75;
 }
 
 form.email-is-focused .form-group.email .form-label, form.message-is-focused .form-group.message .form-label {
@@ -96,12 +106,11 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   position: absolute;
   width: 100%;
   top: 5px;
-  font-family: 'Maven Pro', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 18px;
   text-align: center;
   cursor: text;
+  color: var(--top-and-bot-bg-color);
 }
 
 .form-group.message .form-label {
@@ -129,7 +138,6 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .send-button {
-  font-family: 'Maven Pro', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 19px;
@@ -138,10 +146,10 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   background-image: url("/svgs/envelope.svg");
   background-repeat: no-repeat;
   background-position: 18px 11px;
-  color: #ffffff;
+  color: var(--main-text-color);
   outline: 1px solid #222222;
-  border-top: 1px solid #5FD486;
-  background-color: #32ab5a;
+  border-top: 1px solid rgba(255,255,255,.22);
+  background-color: var(--main-bg-color);
 }
 
 .send-button:hover {
@@ -158,21 +166,20 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 /* stuff */
 
 .stuff {
-  background-color: #15908b;
   padding: 4rem 0;
-  color: #fff;
-  font-weight: 700;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: 21px;
 }
 
 .stuff .item .link {
   margin-bottom: .75em;
+  font-weight: bold;
 }
 
 .stuff .link a {
-  color: #fff;
+  color: var(--main-text-color);
   text-decoration: underline;
-  font-size: 24px;
-  font-weight: 300;
   line-height: 1.4em;
 }
 
@@ -181,15 +188,16 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .section-header {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 21px;
-  margin-bottom: 3rem;
-  color: #88ccca;
+  margin-bottom: 2rem;
+  color: var(--main-text-color);
+  opacity: .65;
 }
 
 .extra-note {
@@ -207,12 +215,11 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .regular-list .item, .bulleted-list .item {
-  margin-bottom: 3rem;
+  margin-bottom: 1.75rem;
 }
 
 .content {
-  font-size: 18px;
-  line-height: 1.5em;
+  
 }
 
 .content a {
@@ -220,10 +227,8 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .list-heading {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: .75em;
-  color: #fff;
+  font-weight: bold;
+  color: var(--main-text-color);
 }
 
 .bullet {
@@ -232,15 +237,14 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 
 .offline-text, .offline-tag {
   font-size: 24px;
-  font-weight: 300;
 }
 
 .offline-text {
   font-weight: 400;
 }
 
-.link-list .link {
-  margin-bottom: .6em;
+.link-list .link, .list-heading {
+  margin-bottom: .5rem;
 }
 
 
@@ -248,11 +252,10 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 
 .footer {
   clear: both;
-  background-color: #333;
-  font-weight: 300;
+  background-color: var(--top-and-bot-bg-color);
   text-align: center;
   padding: 3rem 0 4rem;
-  color: #F0D7AD;
+  color: var(--top-and-bot-text-color);
 }
 
 .footer a {
@@ -260,7 +263,7 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
 }
 
 .footer a:hover {
-  color: #fff;
+  opacity: .6;
 }
 
 .thank-you {
@@ -354,22 +357,12 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   }
 
   .extra-note {
-    font-size: 20px;
     font-weight: 400;
     opacity: .8;
   }
 
-  .stuff .link a {
-    font-size: 22px;
-  }
-
-  .list-heading {
-    font-size: 20px;
-  }
-
   .footer {
     padding: 2rem 1rem 3rem 1rem;
-    line-height: 1.5em;
   }
 
   .open-source-notice {
