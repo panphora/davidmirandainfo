@@ -1,0 +1,374 @@
+/* http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;font:16px/1 sans-serif;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}blockquote,figure,h1,h2,h3,h4,ol,p,ul{margin:0;padding:0}li,main{display:block}h1,h2,h3,h4{font-size:inherit}strong{font-weight:700}a,button{color:inherit;}a:hover,button:hover{transition:.1s}a{text-decoration:none}button{overflow:visible;border:0;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:0 0;cursor:pointer}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {box-sizing: border-box;}*, *:before, *:after {box-sizing: inherit;}
+/* utils */
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+
+/* VARIABLES */
+:root {
+  --top-and-bot-text-color: #e5dbff;
+  --top-and-bot-bg-color: #1f2933;
+  --main-text-color: #fff;
+  --main-bg-color: #00845C;
+}
+
+/* main */
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  line-height: 1.5;
+  color: var(--top-and-bot-text-color);
+  background-color: #333;
+}
+
+.top-section-container {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  background-color: var(--top-and-bot-bg-color);
+}
+
+.site-header {
+  text-align: center;
+}
+
+.col {
+  width: 50%;
+  float: left;
+}
+
+.col.one {
+  padding-right: 3rem;
+}
+
+.col.two {
+  padding-left: 3rem;
+}
+
+.profile-photo {
+  width: 121px;
+  vertical-align: bottom;
+}
+
+.profile-name {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 58px;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  line-height: 1;
+}
+
+/* contact form */
+
+.contact-form {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-me-text {
+  margin-top: 3.5rem;
+  margin-bottom: 1.8rem;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  opacity: .75;
+}
+
+form.email-is-focused .form-group.email .form-label, form.message-is-focused .form-group.message .form-label {
+  display: none;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group {
+  width: 400px;
+  margin: 0 auto 1.1rem;
+}
+
+.form-group.email {
+  height: 40px;
+}
+
+.form-group.message {
+  height: 160px;
+}
+
+.form-label {
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: text;
+  color: var(--top-and-bot-bg-color);
+}
+
+.form-group.message .form-label {
+  top: 60px;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #222;
+  font-size: 18px;
+  padding: 0 8px;
+}
+
+.form-textarea {
+  padding: 6px 8px;
+}
+
+.lightning-bolt {
+  position: relative;
+  bottom: -4px;
+  left: 0;
+  height: 22px;
+  margin-right: .4rem;
+}
+
+.send-button {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 19px;
+  padding: 8px 16px 9px 51px;
+  background-size: 21px 15px;
+  background-image: url("/svgs/envelope.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 15px;
+  color: var(--main-text-color);
+  outline: 1px solid #222222;
+  border-top: 1px solid rgba(255,255,255,.22);
+  background-color: var(--main-bg-color);
+}
+
+.send-button:hover {
+  outline: 1px solid #555;
+  border-top: 1px solid #61BA7F;
+  background-color: #47B56B;
+}
+
+.site-width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* stuff */
+
+.stuff {
+  padding: 4rem 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: 21px;
+}
+
+.stuff .item .link {
+  font-weight: bold;
+}
+
+.stuff .link a {
+  color: var(--main-text-color);
+  text-decoration: underline;
+  line-height: 1.4em;
+}
+
+.stuff .link a:hover {
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.section-header {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 2rem;
+  color: var(--main-text-color);
+  opacity: .65;
+}
+
+.extra-note {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.8em;
+  padding-top: 1rem;
+}
+
+.stars {
+  float: left;
+  width: 64px;
+  margin-right: 1.2rem;
+  margin-top: .5rem;
+}
+
+.regular-list .item, .bulleted-list .item {
+  margin-bottom: 1.75rem;
+}
+
+.content {
+  
+}
+
+.content a {
+  text-decoration: underline;
+}
+
+.list-heading {
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+
+.bullet {
+  font-size: 26px;
+}
+
+.offline-text, .offline-tag {
+  font-size: 24px;
+}
+
+.offline-text {
+  font-weight: 400;
+}
+
+.link-list .link, .list-heading, .stuff .item .link {
+  margin-bottom: .5rem;
+}
+
+
+/* footer */
+
+.footer {
+  clear: both;
+  background-color: var(--top-and-bot-bg-color);
+  text-align: center;
+  padding: 3rem 0 4rem;
+  color: var(--top-and-bot-text-color);
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  opacity: .6;
+}
+
+.thank-you {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.open-source-notice {
+  font-size: 18px;
+  margin-bottom: 2.2rem;
+}
+
+.unicorn {
+  width: 70px;
+}
+
+
+
+@media (max-width: 1290px) {
+  .stuff {
+    padding-left: 2rem;
+    padding-right: 2rem; 
+  }
+}
+
+@media (max-width: 900px) {
+  .col.one {
+    padding-right: 2rem; 
+  }
+
+  .col.two {
+    padding-left: 2rem; 
+  }
+}
+
+@media (max-width: 640px) {
+  .stuff {
+    padding: 2rem;
+  }
+
+  .col, .col.one, .col.two {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    margin-top: 60px;
+    margin-bottom: 36px;
+  }
+
+  .profile-name {
+    font-size: 36px;
+    padding-top: .6em;
+    padding-bottom: .6em;
+  }
+
+  .contact-me-text {
+    font-size: 20px;
+  }
+
+  .contact-form {
+    margin-bottom: 3rem;
+  }
+
+  .form-group {
+    display: block;
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .form-label {
+    font-size: 22px;
+  }
+
+  .lightning-bolt {
+    height: 20px;
+  }
+
+  .send-button {
+    font-size: 22px;
+    padding-left: 54px;
+    background-position: 22px 10px;
+  }
+
+  .section-header {
+    font-size: 22px;
+  }
+
+  .extra-note {
+    font-weight: 400;
+    opacity: .8;
+  }
+
+  .footer {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .open-source-notice {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+
