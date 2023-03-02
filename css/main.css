@@ -228,6 +228,10 @@ form.email-is-focused .form-group.email .form-label, form.message-is-focused .fo
   text-decoration: underline;
 }
 
+.content a:hover {
+  text-decoration: none;
+}
+
 .list-heading {
   font-weight: bold;
   color: var(--main-text-color);
